@@ -1,9 +1,7 @@
-// Define the abstract Role class
 abstract class Role {
-  void displayRole(); // Abstract method to be implemented by subclasses
+  void displayRole(); 
 }
 
-// Implement the Role class in the Student class
 class Student extends Role {
   final String name;
 
@@ -16,7 +14,6 @@ class Student extends Role {
   }
 }
 
-// Implement the Role class in the Teacher class
 class Teacher extends Role {
   final String name;
 
@@ -28,13 +25,10 @@ class Teacher extends Role {
     print('Name: $name');
   }
 }
-
-// Main function to test the implementation
 void main() {
   Role student = Student('Ahammod Sarif');
   Role teacher = Teacher('Mr. Karim');
 
-  // Display roles
   student.displayRole();
   print('---');
   teacher.displayRole();

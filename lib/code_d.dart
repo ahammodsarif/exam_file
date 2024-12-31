@@ -32,12 +32,12 @@ class Teacher extends Person {
 
   // Constructor
   Teacher({
-    required String name,
-    required int age,
-    required String address,
+    required super.name,
+    required super.age,
+    required super.address,
     required this.teacherID,
     required this.coursesTaught,
-  }) : super(name: name, age: age, address: address, role: TeacherRole());
+  }) : super(role: TeacherRole());
 
   // Override the displayRole() method
   @override
